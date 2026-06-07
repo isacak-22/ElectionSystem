@@ -4,8 +4,10 @@ charset-normalizer==3.4.7
 Django==6.0.3
 django-cors-headers==4.9.0
 djangorestframework==3.17.1
+gunicorn==23.0.0
 idna==3.11
 mysqlclient==2.2.8
+packaging==26.2
 pillow==12.2.0
 requests==2.33.1
 sqlparse==0.5.5
