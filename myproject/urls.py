@@ -20,6 +20,7 @@ from django.urls import path, include
 # IMPORTANT IMPORTS
 from django.conf import settings
 from django.conf.urls.static import static
+from django.http import HttpResponse
 
 
 urlpatterns = [
@@ -40,3 +41,8 @@ if settings.DEBUG:
         settings.MEDIA_URL,
         document_root=settings.MEDIA_ROOT
     )
+
+
+urlpatterns = [
+    path('', lambda request: HttpResponse("Election System is Running 🚀")),
+]
